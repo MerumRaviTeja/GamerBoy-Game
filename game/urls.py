@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.playerlogins),
     path('puzzle/',views.puzzle,name='puzzle'),
-    path('starts/',views.puzzlegame),
+    path('starts/',views.puzzlegame,name='pg'),
     path('results/<str:count>',views.output),
     path('chat/',views.chat),
     path('recovery/<str:player>',views.recovery),
